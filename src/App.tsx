@@ -1,5 +1,11 @@
 import React from "react";
+import router from "./router";
+import { RouterProvider } from "react-router-dom";
 
 export default function App() {
-  return <h1>Hello Future</h1>;
+  return (
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  );
 }
